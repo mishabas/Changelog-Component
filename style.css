@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.changelog-title {
+    text-align: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.changelog-title p {
+    margin-top: 15px;
+}
+
+.changelog-component {
+    max-width: 600px;
+    margin: 100px auto;
+    position: relative;
+}
+
+
+.changelog-component::before {
+    content: "";
+    position: absolute;
+    left: 140px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: black;
+}
+
+
+
+.changelog-item {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 40px;
+    padding: 30px 0 ;
+    position: relative;
+}
+
+.changelog-item::before {
+    content: "";
+    position: absolute;
+    left: 131px;
+    top: 35px;
+    width: 16px;
+    height: 16px;
+    background: hsl(210, 100%, 100%);
+    border: 3px solid;
+    border-radius: 50%;
+}
+
+
+.button {
+  margin: 0px auto;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  color: #3B3B3B;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  min-height: 60px;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  max-width: 250px;
+}
+
+
+
+.button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  transition: 300ms;
+}
+
+@media (max-width: 660px) {
+ .changelog-component {
+    margin: 70px 15px  
+ }
+
+ .changelog-title p {
+    margin: 15px 15px;
+ }
+
+
+ .button {
+ max-width: 200px;
+ }
+}
+
